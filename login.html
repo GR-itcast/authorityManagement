@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/layui/css/layui.css">
+    <link rel="stylesheet" href="./my/css/login.css">
+
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div class="head">
+        <div class="logo">
+            <img src="./my/image/logo.png" alt="">
+        </div>
+    </div>
+
+    <!-- 登录注册框 -->
+    <div class="loginAndReg">
+        <div class="head-logo">
+            <img src="./my/image/logo.png" alt="">
+        </div>
+
+        <!-- 登录框 -->
+        <div class="loginBox">
+            <form class="layui-form">
+                <!-- 提示：如果你不想用form，你可以换成div等任何一个普通元素 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>   
+                    <input type="text" name="username" placeholder="请输入用户名" autocomplete="off" class="layui-input" lay-verify="required">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>   
+                    <input type="password" name="password" placeholder="请输入" autocomplete="off" class="layui-input" lay-verify="required|pass">
+                </div>
+
+                <div class="layui-form-item">
+                      <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="*">登录</button>
+                </div>
+                <div class="layui-form-item">
+                    <span class="regMsg">还没有账号吧？立即注册</span>
+                </div>
+            </form>
+
+        </div>
+        <!-- 注册框 -->
+        <div class="regBox">
+
+            <form class="layui-form">
+                <!-- 提示：如果你不想用form，你可以换成div等任何一个普通元素 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>   
+                    <input type="text" name="username" placeholder="请输入用户名" autocomplete="off" class="layui-input" lay-verify="required">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>   
+                    <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input" lay-verify="required|pass">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>   
+                    <input type="password"  placeholder="请再次输入密码" autocomplete="off" class="layui-input" lay-verify="required|pass|repwd">
+                </div>
+
+                <div class="layui-form-item">
+                      <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="*">注册</button>
+                </div>
+                <div class="layui-form-item">
+                    <span class="loginMsg">已有账号？立即登录</span>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <!-- 导入库 -->
+    <script src="./lib/layui/layui.all.js"></script>
+    <script src="./lib/jquery.js"></script>
+    <!-- 导入自己的js -->
+    <script src="./my/js/login.js"></script>
+</body>
+
+</html>
